@@ -34,13 +34,13 @@ header {
 /* Logo */
 .logo {
     display: flex;
-    align-items: center; /* Alinha verticalmente o logo e o texto */
+    align-items: left; /* Alinha verticalmente o logo e o texto */
 }
 
 .logo-img {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 380px; /* Alinha a esquerda */
+    margin-left: 20px; /* Alinha a esquerda */
 }
 
 .logo h2 {
@@ -51,7 +51,8 @@ header {
 
 .menu {
     width: 60%;
-    text-align: center;
+    text-align: right;
+    margin-left: 400px;
 }
 
 .menu a {

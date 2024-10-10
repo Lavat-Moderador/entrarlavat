@@ -28,6 +28,7 @@ header {
     display: flex;
     justify-content: space-between; /* Espaçamento entre logo e menu */
     align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha de baixo se necessário */
 }
 
 /* Logo */
@@ -39,7 +40,7 @@ header {
 .logo-img {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 380px; /* Alinha a esquerda */
+    margin-left: 10px; /* Espaçamento entre o logo e o título */
 }
 
 .logo h2 {
@@ -77,6 +78,30 @@ header {
 
 .menu .btn-menu:hover {
     background-color: #005E82; /* Azul escuro gov.br */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
+    }
+
+    .menu {
+        justify-content: flex-start; /* Alinha o menu à esquerda */
+        width: 100%; /* O menu ocupa toda a largura disponível */
+        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
+        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
+    }
+
+    .menu a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    .menu .btn-menu {
+        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
+    }
 }
 
 /* Seção Principal */
@@ -152,7 +177,7 @@ section.main {
 /* Diretoria */
 section.diretoria {
     background: url('frentelab.jpg');
-    padding: 80px 0;
+    padding: 40px 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -160,8 +185,6 @@ section.diretoria {
     position: relative;
     z-index: 1;
 }
-
-
 
 .chamada-diretoria {
     width: 100%;
