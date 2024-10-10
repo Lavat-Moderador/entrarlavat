@@ -1,0 +1,337 @@
+/* Reset padrão gov.br */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Cor padrão para todos os ícones */
+.fa {
+    color: #0075c9; /* Cor padrão para todos os ícones */
+}
+
+/* Estrutura centralizada */
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho padrão gov */
+header {
+    background-color: #FFFFFF; /* Cor do cabeçalho alterada para branco */
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+}
+
+.logo-img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o logo e o título */
+    margin-left: 380px; /* Alinha a esquerda */
+}
+
+.logo h2 {
+    color: #333333; /* Cor do texto do logo alterada para azul */
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+
+.menu {
+    width: 60%;
+    text-align: center;
+}
+
+.menu a {
+    color: #0C326F; /* Cor dos links alterada para azul */
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #0075C9; /* Verde água gov.br */
+}
+
+.menu .btn-menu {
+    background-color: #3366CC; /* Cor botão gov */
+    display: inline-block;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin-right: 20px  ;
+}
+
+.menu .btn-menu:hover {
+    background-color: #005E82; /* Azul escuro gov.br */
+}
+
+/* Seção Principal */
+section.main {
+    background-image: url('frentelab.jpg');
+    padding: 40px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-cta {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main-cta h2 {
+    color: #0075c9; /* Azul escuro gov.br */
+    font-size: 36px;
+}
+
+.main-cta p {
+    color: #333333; /* Cinza escuro */
+    font-size: 18px;
+}
+
+.main-cta button {
+    background-color: #0075C9;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+}
+
+.main-cta button:hover {
+    background-color: #005E82;
+    transition: 0.3s;
+}
+
+/* Diferenciais */
+.diferenciais {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.diferencial-single {
+    background-color: #FFFFFF;
+    width: 75%;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diferencial-single h2 {
+    color: #0075C9; /* Azul gov.br */
+    font-size: 18px;
+}
+
+.diferencial-single p {
+    color: #666666; /* Cinza médio */
+    font-size: 14px;
+}
+
+/* Diretoria */
+section.diretoria {
+    background: url('frentelab.jpg');
+    padding: 80px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+.chamada-diretoria {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #FFFAFA;
+}
+
+.conteudo-diretoria {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFAFA;
+}
+
+.cargo {
+    margin-bottom: 15px;
+}
+
+.cargo span {
+    display: block;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.cargo i {
+    margin-right: 10px;
+    color: #0DC5C5; /* Verde água gov.br */
+}
+
+.cargo strong {
+    font-weight: bold;
+}
+
+/* Sobre */
+.sobre {
+    background-color: #F9F9F9; /* Cor de fundo suave */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.conteudo-sobre {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #FFFAFA;
+}
+
+.chamada-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333; /* Cinza escuro */
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.chamada-sobre p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.conteudo-sobre {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.conteudo-sobre p {
+    margin-bottom: 15px;
+}
+
+/* Contato */
+section.contato {
+    border-radius: 8px;
+    background-color: #0b1e44; /* Verde claro gov.br */
+    padding: 40px;
+}
+
+.contato h2 {
+    font-size: 24px;
+    color: #F9F9F9; 
+}
+
+.contato p {
+    font-size: 18px;
+    color: #F9F9F9; 
+}
+
+/* Contribuir */
+.contribuir {
+    background-color: #F9F9F9; /* Cor de fundo suave */
+    padding: 30px 0; /* Espaçamento superior e inferior */
+    text-align: left;
+    margin-top: 20px;
+}
+
+.chamada-contribua h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chamada-contribua p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.conteudo-contribua {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Centraliza os equipamentos */
+    width: 80%; /* Alinha o conteúdo em uma área mais estreita */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-size: 16px;
+    line-height: 1.6; /* Espaçamento entre linhas para melhorar a legibilidade */
+    color: #333; /* Cor do texto padrão */
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.equipamento {
+    margin: 15px 0; /* Espaçamento entre os itens */
+}
+
+.nome-equipamento {
+    font-weight: bold;
+  }
+
+.equipamento i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+.equipamento figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda */
+    margin-top: 10px;
+}
+
+.equipamento img {
+    max-width: 100%;
+    height: 300px;
+    /*width: 400px; /* Tamanho padrão da imagem */
+    margin: 10px 0; /* Espaçamento em volta da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.equipamento figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center; /* Centraliza o texto da legenda */
+}
+

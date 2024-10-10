@@ -1,0 +1,122 @@
+/* CSS específico para a página de lançamentos */
+/* Reset padrão gov.br */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Cor padrão para todos os ícones */
+.fa {
+    color: #0075c9; /* Cor padrão para todos os ícones */
+}
+
+/* Estrutura centralizada */
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho padrão gov */
+header {
+    background-color: #FFFFFF; /* Cor do cabeçalho alterada para branco */
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+}
+
+.logo-img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o logo e o título */
+    margin-left: 380px; /* Alinha a esquerda */
+}
+
+.logo h2 {
+    color: #333333; /* Cor do texto do logo alterada para azul */
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.menu {
+    width: 60%;
+    text-align: center;
+}
+
+.menu a {
+    color: #0C326F; /* Cor dos links alterada para azul */
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #0075C9; /* Verde água gov.br */
+}
+
+.menu .btn-menu {
+    background-color: #3366CC; /* Cor botão gov */
+    display: inline-block;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.menu .btn-menu:hover {
+    background-color: #005E82; /* Azul escuro gov.br */
+}
+
+/* Seção Principal */
+
+
+/* Definindo a imagem de fundo */
+body {
+    background-image: url('frentelab.jpg');
+    padding: 40px 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Faz o body ocupar toda a altura da janela */
+}
+
+.planilha-section {
+    padding: 40px 0; /* Espaçamento acima e abaixo da seção da planilha */
+}
+
+.planilha {
+    margin: auto; /* Centraliza a planilha no centro da página */
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 800px; /* Largura máxima para evitar que fique muito grande */
+    text-align: center; /* Centraliza o texto dentro da planilha */
+}
+
+.planilha iframe {
+    height: 300px; /* Defina a altura desejada */
+    width: 100%; /* Mantém a largura do iframe */
+    border: none; /* Remove a borda do iframe */
+    overflow: hidden; /* Oculta o excesso de conteúdo que ultrapassa a altura */
+}
+
+.planilha h2 {
+    text-align: center; /* Centraliza o título da planilha */
+}
+
+.planilha p {
+    text-align: center; /* Centraliza o parágrafo de descrição */
+}
+
