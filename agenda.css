@@ -29,30 +29,32 @@ header {
     display: flex;
     justify-content: space-between; /* Espaçamento entre logo e menu */
     align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha de baixo se necessário */
 }
 
 /* Logo */
 .logo {
     display: flex;
-    align-items: left; /* Alinha verticalmente o logo e o texto */
+    align-items: center; /* Alinha verticalmente o logo e o texto */
 }
 
 .logo-img {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 20px; /* Alinha a esquerda */
+    margin-left: 10px; /* Espaçamento entre o logo e o título */
 }
 
 .logo h2 {
     color: #333333; /* Cor do texto do logo alterada para azul */
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
+    text-align: left;
 }
+
 
 .menu {
     width: 60%;
-    text-align: right;
-    margin-left: 400px;
+    text-align: center;
 }
 
 .menu a {
@@ -73,18 +75,70 @@ header {
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
+    margin-right: 20px  ;
 }
 
 .menu .btn-menu:hover {
     background-color: #005E82; /* Azul escuro gov.br */
 }
 
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
+    }
+
+    .menu {
+        justify-content: flex-start; /* Alinha o menu à esquerda */
+        width: 100%; /* O menu ocupa toda a largura disponível */
+        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
+        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
+    }
+
+    .menu a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    .menu .btn-menu {
+        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
+    }
+}
+
 /* Seção Principal */
+section.main {
+    /*background-image: url('frentelab.jpg');*/
+    background-color: #e3f3f3;
+    padding: 40px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-cta {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main-cta h2 {
+    color: #0075c9; /* Azul escuro gov.br */
+    font-size: 36px;
+}
+
+.main-cta p {
+    color: #333333; /* Cinza escuro */
+    font-size: 18px;
+}
 
 
 /* Definindo a imagem de fundo */
 body {
-    background-image: url('frentelab.jpg');
+    /*background-image: url('frentelab.jpg');*/
+    background-color: #e3f3f3;
     padding: 40px 0;
     background-size: cover;
     background-attachment: fixed;
