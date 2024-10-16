@@ -106,7 +106,7 @@ header {
 
 /* Seção Principal */
 section.main {
-    background-image: url('frentelab.jpg');
+    /*background-image: url('frentelab.jpg');*/
     padding: 40px 0;
     background-size: cover;
     background-attachment: fixed;
