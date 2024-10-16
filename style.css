@@ -107,6 +107,7 @@ header {
 /* Seção Principal */
 section.main {
     /*background-image: url('frentelab.jpg');*/
+    background-color: #F9F9F9;
     padding: 40px 0;
     background-size: cover;
     background-attachment: fixed;
@@ -177,7 +178,8 @@ section.main {
 
 /* Diretoria */
 section.diretoria {
-    background: url('frentelab.jpg');
+    /*background: url('frentelab.jpg');*/
+    background-color: #F9F9F9;
     padding: 40px 0;
     background-size: cover;
     background-repeat: no-repeat;
