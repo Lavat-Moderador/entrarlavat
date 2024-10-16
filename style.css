@@ -254,6 +254,7 @@ section.diretoria {
     text-align: left;
 }
 
+
 .chamada-sobre p {
     font-size: 18px;
     color: #666666;
@@ -270,6 +271,29 @@ section.diretoria {
     text-align: justify;
     text-indent: 20px;
 }
+
+.conteudo-sobre figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda */
+    
+}
+
+.conteudo-sobre img {
+    max-width: 100%;
+    height: 100%;
+    /*width: 400px; /* Tamanho padrão da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.conteudo-sobre figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o texto da legenda */
+}
+
 
 .conteudo-sobre p {
     margin-bottom: 15px;
