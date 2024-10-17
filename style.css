@@ -31,23 +31,21 @@ header {
     flex-wrap: wrap; /* Permite que os itens se movam para a linha de baixo se necessário */
 }
 
-/* Logo */
 .logo {
     display: flex;
-    align-items: center; /* Alinha verticalmente o logo e o texto */
+    align-items: center; /* Alinha logo e texto verticalmente */
 }
 
 .logo-img {
-    height: 40px; /* Ajuste a altura conforme necessário */
-    margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 10px; /* Espaçamento entre o logo e o título */
+    height: 40px; /* Tamanho da imagem da logo */
+    margin-right: 10px; /* Espaço entre a logo e o texto */
 }
 
 .logo h2 {
-    color: #333333; /* Cor do texto do logo alterada para azul */
+    color: #333333; /* Cor do texto */
     font-weight: normal;
     font-size: 18px;
-    text-align: left;
+    margin-right: 30px;
 }
 
 .menu {
