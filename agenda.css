@@ -1,5 +1,4 @@
 /* CSS específico para a página de lançamentos */
-/* Reset padrão gov.br */
 * {
     margin: 0;
     padding: 0;
@@ -21,96 +20,94 @@
     flex-wrap: wrap;
 }
 
-/* Cabeçalho padrão gov */
+/* Cabeçalho padrão com logo e menu */
 header {
-    background-color: #FFFFFF; /* Cor do cabeçalho alterada para branco */
+    background-color: #FFFFFF; /* Fundo branco */
     padding: 20px 0;
     border-bottom: 1px solid #e1e1e1;
     display: flex;
-    justify-content: space-between; /* Espaçamento entre logo e menu */
-    align-items: center; /* Centraliza verticalmente */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha de baixo se necessário */
+    justify-content: space-between;
+    align-items: center; /* Centraliza os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em telas pequenas */
 }
 
 /* Logo */
 .logo {
     display: flex;
-    align-items: center; /* Alinha verticalmente o logo e o texto */
+    align-items: center; /* Alinha logo e texto verticalmente */
 }
 
 .logo-img {
-    height: 40px; /* Ajuste a altura conforme necessário */
-    margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 10px; /* Espaçamento entre o logo e o título */
+    height: 40px; /* Tamanho da imagem da logo */
+    margin-right: 10px; /* Espaço entre a logo e o texto */
 }
 
 .logo h2 {
-    color: #333333; /* Cor do texto do logo alterada para azul */
+    color: #333333; /* Cor do texto */
     font-weight: normal;
     font-size: 18px;
-    text-align: left;
+    margin-right: 30px;
 }
 
-
+/* Menu */
 .menu {
-    width: 60%;
-    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px; /* Espaço entre os itens do menu */
 }
 
 .menu a {
-    color: #0C326F; /* Cor dos links alterada para azul */
+    color: #0C326F; /* Cor dos links */
     font-size: 16px;
     text-decoration: none;
-    margin-right: 20px;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #0075C9; /* Verde água gov.br */
+    color: #0075C9; /* Cor ao passar o mouse */
 }
 
 .menu .btn-menu {
-    background-color: #3366CC; /* Cor botão gov */
-    display: inline-block;
+    background-color: #3366CC; /* Cor do botão */
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
-    margin-right: 20px  ;
 }
 
 .menu .btn-menu:hover {
-    background-color: #005E82; /* Azul escuro gov.br */
+    background-color: #005E82; /* Cor do botão ao passar o mouse */
 }
 
-/* Media queries para responsividade */
+/* Responsividade para dispositivos móveis */
 @media (max-width: 768px) {
     header {
-        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
+        flex-direction: column; /* Coluna para telas menores */
+        align-items: flex-start; /* Alinha à esquerda */
     }
 
     .menu {
+        width: 100%; /* Menu ocupa toda a largura */
         justify-content: flex-start; /* Alinha o menu à esquerda */
-        width: 100%; /* O menu ocupa toda a largura disponível */
-        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
-        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
+        gap: 10px; /* Reduz o espaço entre os itens */
+        margin-top: 10px; /* Espaçamento superior em telas menores */
     }
 
     .menu a {
-        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+        font-size: 14px; /* Menor tamanho para links */
     }
 
     .menu .btn-menu {
-        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
+        padding: 4px 8px; /* Ajusta o botão */
     }
 }
+
 
 /* Seção Principal */
 section.main {
     /*background-image: url('frentelab.jpg');*/
     background-color: #e3f3f3;
-    padding: 40px 0;
+    padding: 0px 0;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -118,7 +115,7 @@ section.main {
 .main-cta {
     width: 100%;
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8);
