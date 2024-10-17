@@ -195,7 +195,7 @@ section.diretoria {
     padding: 10px 0;
     margin-top: 20px;
     border-radius: 8px;
-    background-color: #FFFAFA;
+    background-color: #F9F9F9;
 }
 
 .conteudo-diretoria {
@@ -206,7 +206,7 @@ section.diretoria {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #FFFAFA;
+    background-color: #F9F9F9;
 }
 
 .cargo {
@@ -243,7 +243,7 @@ section.diretoria {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #FFFAFA;
+    background-color: #F9F9F9;
     font-size: 16px; /* Tamanho de fonte consistente */
     line-height: 1.6; /* Espaçamento de linha para melhorar legibilidade */
     color: #333333; /* Cor consistente para o texto */
