@@ -146,6 +146,49 @@ section.main {
     transition: 0.3s;
 }
 
+@media (max-width: 768px) {
+    .diferencial-single {
+        width: 45%; /* Dois itens por linha em telas médias */
+    }
+}
+
+@media (max-width: 480px) {
+    .diferencial-single {
+        width: 100%; /* Um item por linha em telas pequenas */
+    }
+}
+
+
+/* Diferenciais */
+.diferenciais {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diferencial-single {
+    background-color: #FFFFFF;
+    width: 23%;
+    height: 100px;
+    margin: 10px 1%;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.diferencial-single h2 {
+    color: #0075C9; /* Azul gov.br */
+    font-size: 18px;
+}
+
+.diferencial-single p {
+    color: #666666; /* Cinza médio */
+    font-size: 14px;
+}
+
+
 
 /* Rodapé */
 footer {
