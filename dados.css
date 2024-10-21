@@ -171,7 +171,8 @@ section.main {
 .diferencial-single {
     background-color: #FFFFFF;
     width: 23%;
-    height: 100px;
+    height: 200px;
+    width: 250px; 
     margin: 10px 1%;
     border-radius: 4px;
     padding: 20px;
@@ -188,7 +189,20 @@ section.main {
     font-size: 14px;
 }
 
+.diferencial-single a {
+    display: block;
+    margin-bottom: 5px; /* opcional: adiciona um pequeno espaço entre os links */
+    color: #666666; /* Cinza médio */
+    font-size: 14px;
+}
 
+.diferencial-single a:hover {
+    color: #0075C9; /* Verde água gov.br */
+}
+
+.diferencial-single i {
+    color: #3258a3; /* Cinza médio */
+}
 
 /* Rodapé */
 footer {

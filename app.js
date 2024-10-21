@@ -8,7 +8,7 @@ function openAgenda() {
   }
   
 
-  const menuItems = document.querySelectorAll('.menu a[href^="#"]');
+  const menuItems = document.querySelectorAll('.menu a[href^="#0"]');
 
   function getScrollTopByHref(element) {
     const id = element.getAttribute('href');
