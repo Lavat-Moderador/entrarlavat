@@ -40,17 +40,16 @@ header {
 .logo-img {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 10px;
+    margin-left: 10px; /* Espaçamento entre o logo e o título */
 }
 
 .logo h2 {
-    color: #333333; /* Cor do texto do logo */
+    color: #333333; /* Cor do texto do logo alterada para azul */
     font-weight: normal;
     font-size: 18px;
     text-align: left;
 }
 
-/* Menu */
 .menu {
     width: 60%;
     text-align: center;
@@ -69,12 +68,12 @@ header {
 }
 
 .menu .btn-menu {
-    background-color: #3366CC; /* Cor do botão gov */
+    background-color: #3366CC; /* Cor botão gov */
     display: inline-block;
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
-    margin-right: 20px;
+    margin-right: 20px  ;
 }
 
 .menu .btn-menu:hover {
@@ -85,25 +84,26 @@ header {
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
-        align-items: flex-start;
-        padding: 10px 20px;
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
     }
 
     .menu {
-        justify-content: flex-start;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 10px;
+        justify-content: flex-start; /* Alinha o menu à esquerda */
+        width: 100%; /* O menu ocupa toda a largura disponível */
+        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
+        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
     }
 
     .menu a {
-        font-size: 14px;
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
     }
 
     .menu .btn-menu {
-        padding: 4px 8px;
+        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
     }
 }
+
 
 /* Seção Principal */
 section.main {

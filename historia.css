@@ -108,14 +108,15 @@ header {
 /* Seção Principal */
 section.main {
     background-color: #F9F9F9;
-    padding: 10px 100px;
+    padding: 40px 0;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .main-cta {
-    width: 100%;
+    width: 100%; 
     margin: 20px 0;
-    padding: 20px 10px;
+    padding: 20px 0;
     text-align: center;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -139,6 +140,7 @@ section.main {
     border-radius: 4px;
     border: 0;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .main-cta button:hover {
