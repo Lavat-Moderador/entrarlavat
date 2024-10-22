@@ -1,3 +1,8 @@
+/* Adicione esta regra para a rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* CSS específico para a página de lançamentos */
 * {
     margin: 0;

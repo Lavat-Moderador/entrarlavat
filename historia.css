@@ -1,3 +1,8 @@
+/* Adicione esta regra para a rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset padrão gov.br */
 * {
     margin: 0;
@@ -108,15 +113,14 @@ header {
 /* Seção Principal */
 section.main {
     background-color: #F9F9F9;
-    padding: 40px 0;
+    padding: 10px 100px;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .main-cta {
     width: 100%; 
     margin: 20px 0;
-    padding: 20px 0;
+    padding: 20px 10px;
     text-align: center;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.8);

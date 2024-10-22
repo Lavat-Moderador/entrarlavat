@@ -1,3 +1,8 @@
+/* Adicione esta regra para a rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset padrão gov.br */
 * {
     margin: 0;
