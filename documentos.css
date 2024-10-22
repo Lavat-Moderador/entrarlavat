@@ -162,11 +162,13 @@ section.main {
 }
 
 .pdf-section h3 {
+    font-weight: bold; /* Define o texto como negrito */
     margin-bottom: 5px; /* Espaçamento abaixo do título */
     color: #0075C9; /* Cor do texto do rodapé */
 }
 
 .pdf-section p {
+    font-weight: bold; /* Define o texto como negrito */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     color: #333333; /* Cor do texto do rodapé */
 }
@@ -180,6 +182,7 @@ section.main {
 /* Botão de download */
 .pdf-controls {
     margin-top: 20px; /* Espaçamento acima do botão */
+    margin-bottom: 40px;
 }
 
 .download-btn {
