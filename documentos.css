@@ -112,7 +112,8 @@ header {
 /* Seção Principal */
 section.main {
     background-color: #F9F9F9;
-    padding: 40px 0;
+    padding: 10px 100px;
+    background-size: cover;
 }
 
 .main-cta {
@@ -149,59 +150,49 @@ section.main {
     transition: 0.3s;
 }
 
-/* Seção para o PDF */
-.pdf-section {
-    display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: center; /* Centraliza verticalmente */
-    margin: 40px 0; /* Margem superior e inferior */
-    padding: 20px; /* Padding para melhor espaçamento */
-    background-color: #f9f9f9; /* Cor de fundo */
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
-
-.pdf-section h3 {
-    font-weight: bold; /* Define o texto como negrito */
-    margin-bottom: 5px; /* Espaçamento abaixo do título */
-    color: #0075C9; /* Cor do texto do rodapé */
-}
-
-.pdf-section p {
-    font-weight: bold; /* Define o texto como negrito */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
-    color: #333333; /* Cor do texto do rodapé */
-}
-.pdf-section iframe {
+/* Diferenciais */
+.diferenciais {
     width: 100%;
-    height: 600px; /* Altura do iframe */
-    border: none; /* Remove a borda do iframe */
-    max-width: 800px; /* Largura máxima do iframe */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Botão de download */
-.pdf-controls {
-    margin-top: 20px; /* Espaçamento acima do botão */
-    margin-bottom: 40px;
+.diferencial-single {
+    background-color: #FFFFFF;
+    width: 23%;
+    height: 120px;
+    width: 250px; 
+    margin: 10px 1%;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.download-btn {
-    background-color: #0075C9; /* Cor do botão de download */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-flex; /* Flex para alinhar ícone e texto */
-    align-items: center; /* Centraliza verticalmente */
-    transition: background-color 0.3s;
+.diferencial-single h2 {
+    color: #0075C9; /* Azul gov.br */
+    font-size: 18px;
 }
 
-.download-btn:hover {
-    background-color: #005E82; /* Cor do botão ao passar o mouse */
+.diferencial-single p {
+    color: #666666; /* Cinza médio */
+    font-size: 14px;
 }
 
-.download-btn i {
-    margin-right: 5px; /* Espaçamento entre ícone e texto */
+.diferencial-single a {
+    display: block;
+    margin-bottom: 5px; /* opcional: adiciona um pequeno espaço entre os links */
+    color: #666666; /* Cinza médio */
+    font-size: 14px;
+}
+
+.diferencial-single a:hover {
+    color: #0075C9; /* Verde água gov.br */
+}
+
+.diferencial-single i {
+    color: #3258a3; /* Cinza médio */
 }
 
 /* Rodapé */

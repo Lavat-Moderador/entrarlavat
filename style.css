@@ -298,7 +298,6 @@ section.diretoria {
 
 /* Contato */
 section.contato {
-    border-radius: 8px;
     background-color: #0b1e44; /* Verde claro gov.br */
     padding: 40px;
 }
