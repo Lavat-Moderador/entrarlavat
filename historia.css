@@ -157,7 +157,7 @@ section.main {
     background-color: #ffffff; /* Cor de fundo suave */
     padding: 30px 0; /* Espaçamento superior e inferior */
     text-align: left;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .chamada-historico h2 {
@@ -210,6 +210,7 @@ section.main {
     flex-direction: column;
     align-items: center; /* Centraliza a imagem e a legenda */
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .historico img {
@@ -223,7 +224,7 @@ section.main {
 .historico figcaption {
     font-size: 14px;
     color: #666;
-    margin-top: 5px;
+    margin-top: 1px;
     text-align: center; /* Centraliza o texto da legenda */
 }
 
