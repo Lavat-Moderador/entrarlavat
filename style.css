@@ -234,6 +234,18 @@ section.diretoria {
     font-weight: bold;
 }
 
+.cargo a {
+    color: #0C326F; /* Cor dos links alterada para azul */
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.cargo a:hover {
+    color: #0075C9; /* Verde água gov.br */
+}
+
 /* Sobre */
 .sobre {
     background-color: #F9F9F9; /* Cor de fundo suave */
