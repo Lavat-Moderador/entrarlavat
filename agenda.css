@@ -63,25 +63,32 @@ header {
 }
 
 .menu a {
-    color: #0C326F; /* Cor dos links */
+    color: #0C326F; /* Cor dos links alterada para azul */
     font-size: 16px;
     text-decoration: none;
-    transition: 0.3s;
+    margin-right: 20px;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+    display: inline-block; /* Permite que o link responda ao scale */
 }
 
 .menu a:hover {
-    color: #0075C9; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+    color: #0075C9; /* Verde água gov.br */
 }
 
 .menu .btn-menu {
-    background-color: #3366CC; /* Cor do botão */
+    background-color: #3366CC; /* Cor botão gov */
+    display: inline-block;
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
+    margin-right: 20px  ;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
 }
 
 .menu .btn-menu:hover {
-    background-color: #005E82; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+    background-color: #005E82; /* Azul escuro gov.br */
 }
 
 /* Responsividade para dispositivos móveis */

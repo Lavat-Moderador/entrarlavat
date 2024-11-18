@@ -65,10 +65,12 @@ header {
     font-size: 16px;
     text-decoration: none;
     margin-right: 20px;
-    transition: 0.3s;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+    display: inline-block; /* Permite que o link responda ao scale */
 }
 
 .menu a:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
     color: #0075C9; /* Verde água gov.br */
 }
 
@@ -78,10 +80,12 @@ header {
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
-    margin-right: 20px;
+    margin-right: 20px  ;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
 }
 
 .menu .btn-menu:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
     background-color: #005E82; /* Azul escuro gov.br */
 }
 
@@ -168,6 +172,12 @@ section.main {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+}
+
+.diferencial-single:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+    background-color: #E6F3FF; /* Altere a cor de fundo ao passar o mouse */
 }
 
 .diferencial-single h2 {

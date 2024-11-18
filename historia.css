@@ -66,23 +66,27 @@ header {
     font-size: 16px;
     text-decoration: none;
     margin-right: 20px;
-    transition: 0.3s;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+    display: inline-block; /* Permite que o link responda ao scale */
 }
 
 .menu a:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
     color: #0075C9; /* Verde água gov.br */
 }
 
 .menu .btn-menu {
-    background-color: #3366CC; /* Cor do botão gov */
+    background-color: #3366CC; /* Cor botão gov */
     display: inline-block;
     padding: 6px 12px;
     color: #FFFFFF;
     border-radius: 4px;
-    margin-right: 20px;
+    margin-right: 20px  ;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
 }
 
 .menu .btn-menu:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
     background-color: #005E82; /* Azul escuro gov.br */
 }
 
