@@ -149,13 +149,14 @@ section.main {
     border: 0;
     cursor: pointer;
     margin-top: 10px;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
 }
 
 .main-cta button:hover {
     background-color: #005E82;
     transition: 0.3s;
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
 }
-
 /* Contribuir */
 .historico {
     background-color: #ffffff; /* Cor de fundo suave */
