@@ -45,16 +45,17 @@ header {
 .logo-img {
     height: 40px; /* Ajuste a altura conforme necessário */
     margin-right: 10px; /* Espaçamento entre o logo e o título */
-    margin-left: 10px; /* Espaçamento entre o logo e o título */
+    margin-left: 10px;
 }
 
 .logo h2 {
-    color: #333333; /* Cor do texto do logo alterada para azul */
+    color: #333333; /* Cor do texto do logo */
     font-weight: normal;
     font-size: 18px;
     text-align: left;
 }
 
+/* Menu */
 .menu {
     width: 60%;
     text-align: center;
@@ -93,26 +94,25 @@ header {
 @media (max-width: 768px) {
     header {
         flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
-        align-items: flex-start; /* Alinha os itens à esquerda */
-        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
+        align-items: flex-start;
+        padding: 10px 20px;
     }
 
     .menu {
-        justify-content: flex-start; /* Alinha o menu à esquerda */
-        width: 100%; /* O menu ocupa toda a largura disponível */
-        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
-        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
     .menu a {
-        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+        font-size: 14px;
     }
 
     .menu .btn-menu {
-        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
+        padding: 4px 8px;
     }
 }
-
 
 /* Seção Principal */
 section.main {
@@ -122,7 +122,7 @@ section.main {
 }
 
 .main-cta {
-    width: 100%;
+    width: 100%; 
     margin: 20px 0;
     padding: 20px 10px;
     text-align: center;
@@ -136,7 +136,7 @@ section.main {
 }
 
 .main-cta p {
-    color: #8f1f1f; /* Cinza escuro */
+    color: #333333; /* Cinza escuro */
     font-size: 18px;
 }
 
@@ -148,19 +148,168 @@ section.main {
     border-radius: 4px;
     border: 0;
     cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
 }
 
 .main-cta button:hover {
     background-color: #005E82;
     transition: 0.3s;
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+}
+
+/* Sobre */
+.sobre {
+    background-color: #F9F9F9; /* Cor de fundo suave */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.conteudo-sobre {
+    width: 80%; /* Ajuste para centralizar o conteúdo */
+    text-align: justify; /* Justifica o texto */
+    padding: 10px 0;
+    margin: 15px auto; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #F9F9F9;
+    font-size: 16px; /* Tamanho de fonte consistente */
+    line-height: 1.6; /* Espaçamento de linha para melhorar legibilidade */
+    color: #333333; /* Cor consistente para o texto */
+    text-indent: 20px; /* Indenta o primeiro parágrafo */
+}
+
+.chamada-sobre h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333; /* Cinza escuro */
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 
+.chamada-sobre p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.conteudo-sobre figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda */
+}
+
+.conteudo-sobre img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.conteudo-sobre figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o texto da legenda */
+}
+
+
+.conteudo-sobre p {
+    margin-bottom: 15px;
+}
+
+/* Contato */
+section.contato {
+    background-color: #0b1e44; /* Verde claro gov.br */
+    padding: 40px;
+}
+
+.contato h2 {
+    font-size: 24px;
+    color: #F9F9F9; 
+}
+
+.contato p {
+    font-size: 18px;
+    color: #F9F9F9; 
+}
+
+/* Contribuir */
+.contribuir {
+    background-color: #F9F9F9; /* Cor de fundo suave */
+    padding: 30px 0; /* Espaçamento superior e inferior */
+    text-align: left;
+    margin-top: 20px;
+}
+
+.chamada-contribua h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chamada-contribua p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.conteudo-contribua {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Centraliza os equipamentos */
+    width: 80%; /* Alinha o conteúdo em uma área mais estreita */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    font-size: 16px;
+    line-height: 1.6; /* Espaçamento entre linhas para melhorar a legibilidade */
+    color: #333; /* Cor do texto padrão */
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.equipamento {
+    margin: 15px 0; /* Espaçamento entre os itens */
+}
+
+.nome-equipamento {
+    font-weight: bold;
+  }
+
+.equipamento i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-right: 10px; /* Espaçamento entre ícone e texto */
+}
+
+.equipamento figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda */
+    margin-top: 10px;
+}
+
+.equipamento img {
+    max-width: 100%;
+    height: 300px;
+    /*width: 400px; /* Tamanho padrão da imagem */
+    margin: 10px 0; /* Espaçamento em volta da imagem */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.equipamento figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    text-align: center; /* Centraliza o texto da legenda */
+}
+
 /* Rodapé */
 footer {
-    background-color: #F9F9F9;
+    background-color: #0b1e44;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
-    color: #666;
+    color: #F9F9F9;
 }
