@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard - Laboratório XYZ</title>
+    <link rel="stylesheet" href="dash.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="figuras/logo-lavat.png" alt="Logo do Laboratório" class="logo-img">
+            <h2>Laboratório de Variáveis Ambientais Tropicais</h2>
+        </div>
+        <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="sondagem.html">Sondagens</a>
+            <a href="dados.html">Dados</a>
+            <a href="documentos.html">Documentação</a>
+            <div class="btn-menu" onclick="openAgenda()">Agenda de Lançamentos</div>
+        </div>
+    </header>
+    
+
+    <main class="main-content">
+        <section class="dashboard">
+            <div class="container">
+                <h2 class="section-title">Dashboard</h2>
+                <div class="iframe-container">
+                    <iframe src="https://teste12-olbag7efzxmed7nfb4gb66.streamlit.app/" class="iframe-dash" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Laboratório XYZ - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* Adicione esta regra para a rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset padrão gov.br */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Cor padrão para todos os ícones */
+.fa {
+    color: #0075c9; /* Cor padrão para todos os ícones */
+}
+
+/* Estrutura centralizada */
+.center {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cabeçalho padrão gov */
+header {
+    background-color: #FFFFFF; /* Cor do cabeçalho alterada para branco */
+    padding: 20px 0;
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre logo e menu */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha de baixo se necessário */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o logo e o texto */
+}
+
+.logo-img {
+    height: 40px; /* Ajuste a altura conforme necessário */
+    margin-right: 10px; /* Espaçamento entre o logo e o título */
+    margin-left: 10px; /* Espaçamento entre o logo e o título */
+}
+
+.logo h2 {
+    color: #333333; /* Cor do texto do logo alterada para azul */
+    font-weight: normal;
+    font-size: 18px;
+    text-align: left;
+}
+
+.menu {
+    width: 60%;
+    text-align: center;
+}
+
+.menu a {
+    color: #0C326F; /* Cor dos links alterada para azul */
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+    display: inline-block; /* Permite que o link responda ao scale */
+}
+
+.menu a:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+    color: #0075C9; /* Verde água gov.br */
+}
+
+.menu .btn-menu {
+    background-color: #3366CC; /* Cor botão gov */
+    display: inline-block;
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    
+    transition: transform 0.3s, background-color 0.3s; /* Suaviza o aumento e a mudança de cor */
+}
+
+.menu .btn-menu:hover {
+    transform: scale(1.05); /* Aumenta o bloco em 5% */
+    background-color: #005E82; /* Azul escuro gov.br */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Alinha os itens em coluna em telas pequenas */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        padding: 10px 20px; /* Ajuste de padding para telas pequenas */
+    }
+
+    .menu {
+        justify-content: flex-start; /* Alinha o menu à esquerda */
+        width: 100%; /* O menu ocupa toda a largura disponível */
+        flex-wrap: wrap; /* Permite que os itens do menu se movam para a linha de baixo se necessário */
+        gap: 10px; /* Menos espaço entre os itens do menu em telas pequenas */
+    }
+
+    .menu a {
+        font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    .menu .btn-menu {
+        padding: 4px 8px; /* Ajusta o padding do botão em telas pequenas */
+    }
+}
+
+/* Conteúdo Principal */
+.main-content {
+    padding: 2rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #004a99;
+}
+
+/* Estilização do iframe */
+.iframe-container {
+    position: relative;
+    padding-top: 56.25%; /* Proporção 16:9 */
+    background: #eaeaea;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.iframe-dash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Rodapé */
+.footer {
+    background: #222; /* Cinza mais escuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Estilo Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header .logo {
+        justify-content: center;
+    }
+
+    header .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
