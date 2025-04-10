@@ -1,0 +1,10 @@
+# Ignorar arquivos e pastas desnecessárias
+.git
+.gitignore
+Dockerfile
+.dockerignore
+node_modules
+*.md
+*.log
+*.env
+*.zip
