@@ -201,16 +201,16 @@ section.diretoria {
     z-index: 1;
 }
 
-.chamada-diretoria {
+/*.chamada-diretoria {
     width: 100%;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
     border-radius: 8px;
     background-color: #F9F9F9;
-}
+}*/
 
-/*.conteudo-diretoria {
+.conteudo-diretoria {
     width: 100%;
     text-align: left;
     padding: 10px 20px;
@@ -219,7 +219,7 @@ section.diretoria {
     flex-direction: column;
     align-items: flex-start;
     background-color: #F9F9F9;
-}*/
+}
 
 .conteudo-diretoria figure {
     display: flex;
