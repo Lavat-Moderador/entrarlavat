@@ -221,6 +221,26 @@ section.diretoria {
     background-color: #F9F9F9;
 }
 
+.conteudo-diretoria figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza a imagem e a legenda */
+}
+
+.conteudo-diretoria img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+}
+
+.conteudo-diretoria figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-align: center; /* Centraliza o texto da legenda */
+}
+
 .cargo {
     margin-bottom: 15px;
 }
